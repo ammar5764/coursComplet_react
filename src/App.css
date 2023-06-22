@@ -1,0 +1,365 @@
+body{
+  font-family: 'Roboto', sans-serif;
+}
+.conteneur{
+  width: 1200px;
+  margin: 0 auto;
+}
+header{
+  background-color: gainsboro;
+  border-bottom: 1px solid gray;
+  font-family: 'Seymour One', sans-serif;
+}
+.normal-flex{
+  display: flex;
+}
+.haut-gauche, .haut-droit{
+  min-height: 50px;
+  width: 50%;
+}
+.haut-gauche h1{
+  font-size: 28px;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px black;
+  margin: 10px 0 10px 50px;
+}
+.haut-gauche strong{
+  font-weight: 500;
+  letter-spacing: 3px;
+}
+.haut-gauche strong span{
+  color: #8DAAB7;
+}
+.haut-droit a{
+  color: #8DAAB7;
+  text-decoration: none;
+  padding: 10px;
+  text-align: right;
+  display: block;
+}
+.haut-droit a:hover{
+  text-decoration: underline;
+}
+/* nav{
+  background-color: lime;
+} */
+nav .conteneur .flex-menu{
+  display: flex;
+  justify-content: center;
+}
+nav .conteneur .flex-menu a{
+  margin: 5px 50px;
+  text-decoration: none;
+  color: #49636f;   
+  padding: 10px;
+  border-radius: 10px;
+  transition: .1s;
+  font-size: 18px;
+}
+nav .conteneur .flex-menu a:hover{
+  color: white;
+  /* font-size: 20px; */
+}
+/* Zone slider */
+/* #slider{
+  background-color: lime;
+} */
+#slider .flex-slider{
+  /* border: 3px solid red; */
+  display: flex;
+}
+figure#milieu-haut-gauche{
+  width: 40%;
+  overflow: hidden;
+  position: relative;
+}
+figure#milieu-haut-gauche img{
+  display: block;
+  width: 100%;
+  transition: 2s;
+  scale: 0.9;
+}
+figure#milieu-haut-gauche:hover img{
+  scale: 1;
+}
+figure#milieu-haut-gauche figcaption{
+  background-color: rgba(69, 136, 177, 1);
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  transition: 2s;
+}
+figure#milieu-haut-gauche:hover figcaption{
+  background-color: rgba(69, 136, 177, 0);
+  align-items: center;
+  bottom: -30px;
+}
+figure#milieu-haut-gauche figcaption a{
+  display: block;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+}
+#milieu-haut-droit{
+  /* background-color: rgb(108, 99, 156); */
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#milieu-haut-droit h2{
+  margin-bottom: 15px;
+  color: #8DAAB7;
+  font-weight: bold;
+}
+/* --------- */
+.flex-main{
+  display: flex;
+}
+main section#presentation{
+  width: 70%;;
+}
+main section#presentation h2{
+  border-top: 1px solid #8DAAB7;
+  border-bottom: 1px solid #8DAAB7;
+  font-size: 26px;
+  font-weight: bold;
+  color: #8DAAB7;
+  padding: 10px;
+}
+main section#presentation .profil-flex{
+  margin: 40px 0;
+  display: flex;
+}
+main section#presentation .profil-flex img{
+  display: block;
+  width: 15%;
+}
+main section#presentation .profil-flex p{
+  width: 85%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  text-align: justify;
+  text-align-last: right;
+  line-height: 23px;
+  font-size: 15px;
+}
+main section#presentation .mise-en-avant{
+  display: flex;
+  justify-content: space-between;
+}
+main section#presentation .mise-en-avant figure{
+  width: 25%;
+  margin: 0 5px;
+  /* align-items: center;
+  position: relative; */
+}
+main section#presentation .mise-en-avant h4{
+  font-weight: bold;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  margin: 5px auto;
+}
+main section#presentation .mise-en-avant img{
+  width: 50%;
+  margin: 13px auto;
+  display: block;
+  transition: 0.3s;
+}
+main section#presentation .mise-en-avant img:hover{
+  transform: rotate(360deg);   
+}
+main section#presentation .mise-en-avant figcaption{
+  text-align: justify;
+  font-size: 18px;
+  padding: 10px;
+}
+main aside{
+  min-height: 150px;
+  width: 30%;
+  padding-left: 3% ;
+}
+main aside div.encart{
+  border: 1px solid rgb(189, 188, 188);
+  border-radius: 10px;
+  margin: 15px;
+}
+main aside div.encart h3{
+  border-bottom: 1px solid rgb(189, 188, 188);
+  border-radius: 10px 10px 0 0;
+  background-color: #efeded;
+  color: rgb(41, 37, 37);
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+main aside div.encart p{
+  padding: 10px;
+  text-align: justify;
+}
+main aside div.encart form label,
+main aside div.encart form input, 
+main aside div.encart form textarea {
+  display: block;
+  width: 90%;
+  margin: 5px auto;
+}
+
+
+main aside div.encart form textarea{
+  height: 80px;
+  margin-bottom: 10px;
+}
+main aside div.encart form input[type=submit]{
+  line-height: 30px;
+  background-color: #8DAAB7;
+  border: 1px solid rgb(192, 187, 187);
+  color: white;
+  border-radius: 5px;
+}
+/* Footer */
+footer{
+  background: #F2F2F2;
+  border-top: 1px solid #c0c0c0;
+  margin: 2em 0 0 0;
+  text-align: center;
+  padding: 20px 0;
+}
+footer nav.conteneur {
+  max-width: 1170px;
+  margin: 0 auto;
+  /* border: 1px dotted; */
+}
+footer nav.conteneur a{
+  color: #8DAAB7;
+  font-size: 15px;
+  text-decoration: none;
+}
+footer nav.conteneur a:hover{
+  text-decoration: underline;
+}
+footer p.conteneur{
+  margin: 10px auto;
+}
+@media screen and (max-width: 1230px) {
+  .conteneur{
+      width: 100%;
+  }
+  figure#milieu-haut-gauche{
+      display: none;
+  }
+  #milieu-haut-droit{
+      width: 100%;
+  }
+  main .flex-main{
+      display: block;
+  }
+  main section#presentation {
+      width: 85%;
+      margin: auto;
+  }
+  main aside {
+      width: 85%;
+      margin: 0 auto;
+      display: flex;
+      justify-content: space-around;
+  }
+  main aside div.encart {
+      margin: 0px;
+      width: 30%;
+  }
+}
+@media screen and (max-width: 870px) {
+    main section#presentation .mise-en-avant {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    main section#presentation .mise-en-avant figure {
+        width: 50%;
+        margin: 0;
+    }
+}
+@media screen and (max-width: 570px) {
+  nav .conteneur .flex-menu a{
+      margin: 0;
+  }
+  main section#presentation .profil-flex {
+      margin: 0;
+      display: block;
+  }
+  main aside {
+      width: 90%;
+      margin: 0 auto;
+      display: flex;
+      flex-wrap: wrap;
+  }
+  main aside div.encart {
+      margin: 10px 0px;
+      width: 100%;
+  }
+}
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+

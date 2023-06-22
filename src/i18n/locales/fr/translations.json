@@ -1,0 +1,10 @@
+{
+  "header": {},
+  "nav": {
+    "login": "s'authentifier"
+  },
+  "Portfolio": {
+    "title": "Tous mes projets"
+  },
+  "footer": {}
+}
